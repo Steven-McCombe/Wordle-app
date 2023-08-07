@@ -16,7 +16,7 @@ useEffect(() => {
 
   return (
     <div className="App">
-      <h1>Wordle</h1>
+      <h1>Big Stevies Wordle</h1>
       {solution && <Wordle solution={solution} />}
     </div>
   );
