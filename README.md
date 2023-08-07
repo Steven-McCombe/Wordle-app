@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# Phantom-Plates
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+Wordle is often played online as a casual and challenging word game. It requires a mix of vocabulary knowledge, pattern recognition, and deduction skills. The game's popularity has led to various online versions and adaptations, each with slight variations in rules and presentation.
 
-## Available Scripts
+## Table of Contents
+* [Installation](#installation)
+* [Links](#Links)
+* [How to Play](#howtoplay)
+* [License](#license)
+* [Credits](#credits)
+* [Contributors](#contributors)
+* [Report Bugs](#bugreport)
 
-In the project directory, you can run:
+## Installation
+N/A
 
-### `npm start`
+## Links
+Navigate to the following URL in your browser. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+https://wordle-app-delta.vercel.app/
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How To Play
+Guess the Wordle in 6 tries.
+Each guess must be a valid 5-letter word.
+The color of the tiles will change to show how close your guess was to the word.
 
-### `npm test`
+## Examples
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![image](./images/weary.png)
 
-### `npm run build`
+**W** is in the word and in the correct spot.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![image](./images/pills.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**I** is in the word but in the wrong spot.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![image](./images/vague.png)
 
-### `npm run eject`
+**U** is not in the word in any spot.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Application Screenshot:
+ ![image](./images/app.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## License 
+  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) 
 
-## Learn More
+  [Read more about MIT License here.](https://opensource.org/licenses/MIT)
+  
+## Credits
+- Font - Courtesy of [Google Fonts.](https://fonts.google.com)
+- Fontend Toolkit - Courtesy of [React.](https://getbootstrap.com/)
+- Code Walkthrough - Courtesy of [The Net Ninja.](https://www.youtube.com/watch?v=ZSWl5UwhHcs&ab_channel=TheNetNinja)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contributors
+- Steven McCombe  [Github](https://github.com/Steven-McCombe)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## BugReport
+- [E-mail Bug Report](mailto:bugreport@wordle.com)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
