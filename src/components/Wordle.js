@@ -11,6 +11,9 @@ useEffect(() => {
 }, [handleKeyUp])
 
   return (
+    <div>
+    <div>Solution - {solution}</div>
     <div>Current Guess - {currentGuess}</div>
+    </div>
   )
 }

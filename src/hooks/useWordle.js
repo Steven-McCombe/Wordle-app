@@ -11,7 +11,29 @@ const [isCorrect, setIsCorrect] = useState(false)
 
 //format a new guess into an array of letter objects
 const formatGuess = () => {
-console.log('Formatting the guess - ' + currentGuess)
+let solutionArray = [...solution]
+let formattedGuess = [...currentGuess].map((l) => {
+return {key: l, color: 'grey'}
+})
+
+// find any green letters 
+formattedGuess.forEach((l, i) => {
+    if (solutionArray[i] === l.key){
+        formattedGuess[i].color = 'green'
+        solutionArray[i] = null
+    }
+})
+
+formattedGuess.forEach((l, i) => {
+   if (solutionArray.includes(l.key) && l.color !== 'green'){
+    formattedGuess[i].color = 'yellow'
+    solutionArray[solution.indexOf(l.key)] = null
+    
+   }
+})
+
+return formattedGuess
+
 }
 
 // add a new guess to the guesses state
@@ -38,7 +60,8 @@ if (key === 'Enter') {
         console.log('Word must be 5 chars long')
         return
     }
-    formatGuess()
+    const formatted = formatGuess()
+    console.log(formatted)
 }
 if(key === 'Backspace') {
     setCurrentGuess((prev) => {
