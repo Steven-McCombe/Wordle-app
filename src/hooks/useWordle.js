@@ -3,7 +3,7 @@ import { useState } from "react"
 const useWorld = (solution) => {
 
 const [turn, setTurn] = useState(0)
-const [currentGuess, setCurrentGuess] = useState("")
+const [currentGuess, setCurrentGuess] = useState('')
 const [guesses, setGuesses] = useState([]) // each guess is an array
 const [history, setHistory] = useState([]) // each guess is a string
 const [isCorrect, setIsCorrect] = useState(false)
@@ -24,9 +24,11 @@ const addNewGuess = () => {
 //handle keyup event and track current guess
 //if user presses enter, and the new guess.
 
-const handleKeyUp = () => {
-
+const handleKeyUp = ({ key }) => {
+console.log(key)
 }
+
+return {turn, currentGuess, guesses, isCorrect, handleKeyUp}
 
 }
 
