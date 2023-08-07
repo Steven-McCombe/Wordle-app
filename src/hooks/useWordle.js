@@ -5,13 +5,13 @@ const useWorld = (solution) => {
 const [turn, setTurn] = useState(0)
 const [currentGuess, setCurrentGuess] = useState('')
 const [guesses, setGuesses] = useState([]) // each guess is an array
-const [history, setHistory] = useState([]) // each guess is a string
+const [history, setHistory] = useState(['hello', 'ninja']) // each guess is a string
 const [isCorrect, setIsCorrect] = useState(false)
 
 
 //format a new guess into an array of letter objects
 const formatGuess = () => {
-
+console.log('Formatting the guess - ' + currentGuess)
 }
 
 // add a new guess to the guesses state
@@ -25,7 +25,27 @@ const addNewGuess = () => {
 //if user presses enter, and the new guess.
 
 const handleKeyUp = ({ key }) => {
-
+if (key === 'Enter') {
+    if(turn > 5) {
+    console.log('You have used all your guesses.')
+    return 
+    }
+    if(history.includes(currentGuess)){
+        console.log('You already tried that word')
+        return
+    }
+    if(currentGuess.length !== 5){
+        console.log('Word must be 5 chars long')
+        return
+    }
+    formatGuess()
+}
+if(key === 'Backspace') {
+    setCurrentGuess((prev) => {
+        return prev.slice(0, -1)
+    })
+    return
+}
 if (/^[A-Za-z]$/.test(key)){
     if(currentGuess.length < 5){
         setCurrentGuess((prev) => {
