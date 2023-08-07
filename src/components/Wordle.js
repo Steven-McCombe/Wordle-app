@@ -11,6 +11,6 @@ useEffect(() => {
 }, [handleKeyUp])
 
   return (
-    <div>Wordle</div>
+    <div>Current Guess - {currentGuess}</div>
   )
 }
